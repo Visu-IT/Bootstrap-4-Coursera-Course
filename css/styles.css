@@ -36,3 +36,8 @@
 .navbar-dark{
     background-color: #512DAB;
 }
+
+.my-small-btn {
+    width:250px;
+    padding:8px;
+}
