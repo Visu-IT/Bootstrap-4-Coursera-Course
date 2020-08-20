@@ -37,6 +37,11 @@
     background-color: #512DAB;
 }
 
+.my-reserve {
+    width:250px;
+    padding: 8px;
+}
+
 .my-small-btn {
     width:250px;
     padding:8px;
@@ -47,4 +52,19 @@
     border-right: 1px solid #ddd;
     border-bottom: 1px solid #ddd;
     padding: 10px;
+}
+
+.carousel {
+    background: #512DAB;
+}
+
+.carousel-item{
+    height: 200px;
+}
+
+.carousel-item img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-height: 200px;
 }
