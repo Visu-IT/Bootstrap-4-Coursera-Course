@@ -30,7 +30,7 @@
                     <li class="nav-item"><a class="nav-link" href="./contactus.html"><span class="fa fa-address-card fa-lg"></span>Contact</a></li>
                 </ul>
                 <span class="navbar-text">
-                    <a data-toggle="modal" data-target="#loginModal">
+                    <a id="btnLoginModelShow">
                         <span class="fa fa-sign-in"></span> Login
                     </a>
                 </span>
@@ -87,7 +87,7 @@
                 </div>
                 <div class="form-group align-self-center">
                     <div class="col-12 col-sm-3 align-self-center"></div>
-                        <a role="button" class="btn btn-block nav-link btn-warning my-reserve" data-toggle="modal" data-target="#reserveModal"><strong>Reserve Table</strong></a>   
+                        <a role="button" class="btn btn-block nav-link btn-warning my-reserve" id="btnModelShow"><strong>Reserve Table</strong></a>   
                     </div>
                 </div>
             </div>
@@ -321,6 +321,29 @@
             }  
         });
     });
+</script>
+ <!-- Login Modal  -->
+ <script>
+    $(document).ready(function (){
+        $('#btnLoginModelShow').click (function (){
+            $('#loginModal').modal('show');
+        });
+        $('.btnLoginModelHide').click (function (){
+            $('#loginModal').modal('hide');
+        });
+    });
+ 
+ </script>
+   <!-- reserve Table Modal  -->
+  <script>
+   $(document).ready(function (){
+       $('#btnModelShow').click (function (){
+           $('#reserveModal').modal('show');
+       });
+       $('.btn-modelHide').click (function (){
+           $('#reserveModal').modal('hide');
+       });
+   });
 </script>
 </body>
 
